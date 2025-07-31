@@ -1,33 +1,42 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import aprendido from './assets/img/barraDePontos/aprendido.png';
+import correct from './assets/img/barraDePontos/correct.png';
+import pular from './assets/img/barraDePontos/pular.png';
+import reset from './assets/img/barraDePontos/reset.png';
+
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div>
+      <h1>Flash Cards</h1>
+    </div>
+    <div className='barraChecagemPontos'>
+      <div className='barraProgresso' ></div>
+      <div className='iconscolection'>
+        <img className='icones' src={aprendido} alt="" /><button className='iconName'>aprendido</button>
+        <img className='icones' src={correct} alt="" /><button className='iconName'>correct</button>
+        <img className='icones' src={pular} alt="" /><button className='iconName'>pular</button>
+        <img className='icones' src={reset} alt="" /><button className='iconName'>reset</button>
       </div>
-      <h1>Vite + React</h1>
+
+    </div>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <h1 className="textoCard">Inicio das Perguntas</h1>
+        {/* <button onClick={() => setCount((count) => count + 10)}>
           count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        </button> */}
+        <a href="">Click para revelar a resposta.</a>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div>
+        <button>Já sei a resposta!</button>
+        <button>Não sei Responder esta!</button>
+        <button>Pular Pergunta</button>
+      </div>
     </>
   )
 }

@@ -34,8 +34,43 @@
 }
 
 .card {
-  padding: 2em;
+  border: 2px solid black;
+  padding: 100px;
+  border-radius: 10px;
 }
+.barraChecagemPontos {
+  padding: 80px;
+  border: 2px solid black ;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.barraProgresso {
+  background-color: green;
+  padding: 10px;
+  border: 2px solid black ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.iconscolection {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10px;
+
+}
+.icones{
+  height: 40px;
+  padding-left: 20px;
+}
+.iconName {
+  padding-left: 10px;
+}
+
+
 
 .read-the-docs {
   color: #888;
